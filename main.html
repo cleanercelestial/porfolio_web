@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiu Tsz Ying | Portfolio</title>
+    <link rel="icon" href="image/me.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ==================== TYPEWRITER INTRO SCREEN ==================== -->
+    <div id="intro-screen">
+        <div class="terminal-window intro-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">portfolio.py</span>
+            </div>
+            <div class="terminal-body">
+                <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span id="typewriter-text"></span><span class="cursor-blink">|</span>
+                </div>
+                <div class="code-line output-line hidden" id="output-line">
+                    <span class="line-number">2</span>
+                    <span class="output-text"></span>
+                </div>
+            </div>
+        </div>
+        <p class="skip-hint" data-i18n="skip_hint">Press any key or click to skip</p>
+    </div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <div id="main-content" class="hidden">
+
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <span class="bracket">&lt;</span>CY<span class="bracket"> /&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active" data-i18n="nav_home">home()</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">about()</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav_skills">skills()</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav_works">works()</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">contact()</a></li>
+            </ul>
+            <button class="lang-toggle" id="lang-toggle" title="Switch Language">
+                <span class="lang-label" data-i18n="lang_label">EN</span>
+                <span class="lang-slider"></span>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-video-container">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="image/Chiu_tsz_ying_25237594.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-comment" data-i18n="hero_comment"># Welcome to my creative world</p>
+                <h1 class="hero-title" data-i18n-html="hero_title">
+                    <span class="variable">artist</span> <span class="operator">=</span> <span class="string">"Chiu Tsz Ying"</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n-html="hero_subtitle">
+                    <span class="function-name">print</span><span class="punctuation">(</span><span class="string">"Multi-media Artist &amp; Creative Visionary"</span><span class="punctuation">)</span>
+                </p>
+                <a href="#about" class="hero-cta">
+                    <span class="cta-text" data-i18n="hero_cta">explore()</span>
+                    <span class="cta-arrow">&#8595;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <h2 class="section-title" data-i18n-html="section_about"><span class="comment">// </span>About Me</h2>
+            <div class="window-box">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">about_me.py</span>
+                    <div class="window-controls">
+                        <span class="win-btn">&#9472;</span>
+                        <span class="win-btn">&#9723;</span>
+                        <span class="win-btn">&#10005;</span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="about-content">
+                        <div class="about-photo">
+                            <img src="image/me.png" alt="Chiu Tsz Ying" class="profile-img">
+                        </div>
+                        <div class="about-text">
+                            <p class="code-comment" data-i18n="about_greeting"># Hello! I'm Chiu Tsz Ying</p>
+                            <p class="code-block">
+                                <span class="keyword">class</span> <span class="class-name">AboutMe</span>:
+                            </p>
+                            <p class="code-block indent-1">
+                                <span class="keyword">def</span> <span class="function-name">__init__</span>(<span class="param">self</span>):
+                            </p>
+                            <p class="code-block indent-2" data-i18n-html="about_name">
+                                <span class="param">self</span>.<span class="property">name</span> = <span class="string">"Chiu Tsz Ying"</span>
+                            </p>
+                            <p class="code-block indent-2" data-i18n-html="about_role">
+                                <span class="param">self</span>.<span class="property">role</span> = <span class="string">"Multi-media Artist"</span>
+                            </p>
+                            <p class="code-block indent-2" data-i18n-html="about_passion">
+                                <span class="param">self</span>.<span class="property">passion</span> = [<span class="string">"Visual Art"</span>, <span class="string">"Video Production"</span>, <span class="string">"Creative Design"</span>]
+                            </p>
+                            <p class="code-block indent-2" data-i18n-html="about_motto">
+                                <span class="param">self</span>.<span class="property">motto</span> = <span class="string">"Turning imagination into visual reality."</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <h2 class="section-title" data-i18n-html="section_skills"><span class="comment">// </span>Skills</h2>
+            <div class="windows-grid">
+                <div class="window-box small-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">creative_tools.sh</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p class="code-comment" data-i18n="skills_creative_title"># Creative Software</p>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Premiere Pro</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe After Effects</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Photoshop</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Illustrator</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="window-box small-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">media_tools.sh</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p class="code-comment" data-i18n="skills_media_title"># Media &amp; Design Tools</p>
+                        <ul class="tool-list">
+                            <li><span class="prompt">$</span> DaVinci Resolve</li>
+                            <li><span class="prompt">$</span> Figma</li>
+                            <li><span class="prompt">$</span> Blender</li>
+                            <li><span class="prompt">$</span> Canva</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="window-box small-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">soft_skills.sh</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p class="code-comment" data-i18n="skills_soft_title"># Soft Skills</p>
+                        <ul class="tool-list">
+                            <li><span class="prompt">$</span> <span data-i18n="soft_1">Creative Thinking</span></li>
+                            <li><span class="prompt">$</span> <span data-i18n="soft_2">Visual Storytelling</span></li>
+                            <li><span class="prompt">$</span> <span data-i18n="soft_3">Team Collaboration</span></li>
+                            <li><span class="prompt">$</span> <span data-i18n="soft_4">Attention to Detail</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <h2 class="section-title" data-i18n-html="section_works"><span class="comment">// </span>Works</h2>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <span class="filter-label" data-i18n="filter_label">$ filter --type</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">all()</button>
+                    <button class="filter-btn" data-filter="graphic-design" data-i18n="filter_graphic">graphic_design()</button>
+                    <button class="filter-btn" data-filter="illustration" data-i18n="filter_illustration">illustration()</button>
+                    <button class="filter-btn" data-filter="games" data-i18n="filter_games">games()</button>
+                    <button class="filter-btn" data-filter="animation-video" data-i18n="filter_animation">animation_video()</button>
+                    <button class="filter-btn" data-filter="multi-media" data-i18n="filter_multimedia">multi_media()</button>
+                </div>
+            </div>
+
+            <div class="windows-grid" id="works-grid">
+                <div class="window-box project-window" data-work="1" data-category="animation-video">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">work_01.md</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="preview-box">
+                            <video class="preview-media" muted loop playsinline>
+                                <source src="image/work1_preview.mp4" type="video/mp4">
+                            </video>
+                            <div class="preview-overlay">
+                                <span class="preview-play">&#9654;</span>
+                            </div>
+                        </div>
+                        <h3 class="project-name" data-i18n-html="work1_title"><span class="hashtag">#</span> Work One</h3>
+                        <p class="project-desc" data-i18n="work1_desc">Describe your first creative work here — the concept, medium, and the story behind it.</p>
+                        <div class="project-tags">
+                            <span class="tag">Video</span>
+                            <span class="tag">Motion Graphics</span>
+                            <span class="tag">After Effects</span>
+                        </div>
+                        <a href="#" class="project-link view-work-btn" data-work="1"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="window-box project-window" data-work="2" data-category="graphic-design">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">work_02.md</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="preview-box">
+                            <img class="preview-media" src="image/work2_preview.jpg" alt="Work Two Preview">
+                        </div>
+                        <h3 class="project-name" data-i18n-html="work2_title"><span class="hashtag">#</span> Work Two</h3>
+                        <p class="project-desc" data-i18n="work2_desc">Describe your second creative work here — the visual style, techniques used, and what inspired you.</p>
+                        <div class="project-tags">
+                            <span class="tag">Photography</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Lightroom</span>
+                        </div>
+                        <a href="#" class="project-link view-work-btn" data-work="2"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="window-box project-window" data-work="3" data-category="illustration">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">work_03.md</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="preview-box">
+                            <img class="preview-media" src="image/work3_preview.jpg" alt="Work Three Preview">
+                        </div>
+                        <h3 class="project-name" data-i18n-html="work3_title"><span class="hashtag">#</span> Work Three</h3>
+                        <p class="project-desc" data-i18n="work3_desc">Describe your third creative work here — the challenges you faced and your artistic approach.</p>
+                        <div class="project-tags">
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Illustrator</span>
+                            <span class="tag">Branding</span>
+                        </div>
+                        <a href="#" class="project-link view-work-btn" data-work="3"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <h2 class="section-title" data-i18n-html="section_contact"><span class="comment">// </span>Contact</h2>
+            <div class="window-box">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">connect_with_me.py</span>
+                    <div class="window-controls">
+                        <span class="win-btn">&#9472;</span>
+                        <span class="win-btn">&#9723;</span>
+                        <span class="win-btn">&#10005;</span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <p class="code-comment" data-i18n="contact_greeting"># Let's create something together!</p>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <span class="contact-icon">&#9993;</span>
+                            <div>
+                                <p class="contact-label">email</p>
+                                <a href="mailto:your@email.com" class="contact-value">your@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">&#128279;</span>
+                            <div>
+                                <p class="contact-label">linkedin</p>
+                                <a href="#" class="contact-value">linkedin.com/in/yourprofile</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">&#127912;</span>
+                            <div>
+                                <p class="contact-label">instagram</p>
+                                <a href="#" class="contact-value">instagram.com/yourhandle</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK DETAIL OVERLAY -->
+        <div id="work-detail" class="work-detail-overlay hidden">
+            <div class="work-detail-nav">
+                <button class="back-btn" id="back-btn">
+                    <span class="prompt">$</span> <span data-i18n="back_btn">cd ..</span>
+                </button>
+                <span class="work-detail-filename" id="detail-filename">work_01.md</span>
+            </div>
+            <div class="work-detail-content">
+                <div class="work-detail-media-container">
+                    <div class="window-box detail-media-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title" id="detail-media-title">preview.mp4</span>
+                            <div class="window-controls">
+                                <span class="win-btn">&#9472;</span>
+                                <span class="win-btn">&#9723;</span>
+                                <span class="win-btn">&#10005;</span>
+                            </div>
+                        </div>
+                        <div class="window-body detail-media-body" id="detail-media-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="work-detail-info">
+                    <div class="window-box detail-info-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title" id="detail-info-title">details.py</span>
+                            <div class="window-controls">
+                                <span class="win-btn">&#9472;</span>
+                                <span class="win-btn">&#9723;</span>
+                                <span class="win-btn">&#10005;</span>
+                            </div>
+                        </div>
+                        <div class="window-body">
+                            <h2 class="detail-title" id="detail-title"></h2>
+                            <div class="detail-meta">
+                                <p class="code-block">
+                                    <span class="keyword">class</span> <span class="class-name" id="detail-class">WorkOne</span>:
+                                </p>
+                                <p class="code-block indent-1">
+                                    <span class="keyword">def</span> <span class="function-name">describe</span>(<span class="param">self</span>):
+                                </p>
+                                <p class="code-block indent-2" id="detail-type-line">
+                                    <span class="param">self</span>.<span class="property">type</span> = <span class="string" id="detail-type"></span>
+                                </p>
+                                <p class="code-block indent-2" id="detail-tools-line">
+                                    <span class="param">self</span>.<span class="property">tools</span> = <span class="string" id="detail-tools"></span>
+                                </p>
+                                <p class="code-block indent-2" id="detail-year-line">
+                                    <span class="param">self</span>.<span class="property">year</span> = <span class="string" id="detail-year"></span>
+                                </p>
+                            </div>
+                            <div class="detail-description">
+                                <p class="code-comment" data-i18n="detail_about_header"># About this work</p>
+                                <p class="detail-text" id="detail-description"></p>
+                            </div>
+                            <div class="detail-tags" id="detail-tags"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p data-i18n-html="footer_credit"><span class="comment">//</span> Crafted with <span class="heart">&hearts;</span> by Chiu Tsz Ying &copy; 2026</p>
+            <p class="footer-note" data-i18n-html="footer_thanks">print(<span class="string">"Thanks for visiting my creative space!"</span>)</p>
+        </footer>
+    </div>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        /* ---- Translation Dictionary ---- */
+        const translations = {
+            en: {
+                lang_label: 'EN',
+                skip_hint: 'Press any key or click to skip',
+                nav_home: 'home()',
+                nav_about: 'about()',
+                nav_skills: 'skills()',
+                nav_works: 'works()',
+                nav_contact: 'contact()',
+                hero_comment: '# Welcome to my creative world',
+                hero_title: '<span class="variable">artist</span> <span class="operator">=</span> <span class="string">"Chiu Tsz Ying"</span>',
+                hero_subtitle: '<span class="function-name">print</span><span class="punctuation">(</span><span class="string">"Multi-media Artist &amp; Creative Visionary"</span><span class="punctuation">)</span>',
+                hero_cta: 'explore()',
+                section_about: '<span class="comment">// </span>About Me',
+                about_greeting: '# Hello! I\'m Chiu Tsz Ying',
+                about_name: '<span class="param">self</span>.<span class="property">name</span> = <span class="string">"Chiu Tsz Ying"</span>',
+                about_role: '<span class="param">self</span>.<span class="property">role</span> = <span class="string">"Multi-media Artist"</span>',
+                about_passion: '<span class="param">self</span>.<span class="property">passion</span> = [<span class="string">"Visual Art"</span>, <span class="string">"Video Production"</span>, <span class="string">"Creative Design"</span>]',
+                about_motto: '<span class="param">self</span>.<span class="property">motto</span> = <span class="string">"Turning imagination into visual reality."</span>',
+                section_skills: '<span class="comment">// </span>Skills',
+                skills_creative_title: '# Creative Software',
+                skills_media_title: '# Media & Design Tools',
+                skills_soft_title: '# Soft Skills',
+                soft_1: 'Creative Thinking',
+                soft_2: 'Visual Storytelling',
+                soft_3: 'Team Collaboration',
+                soft_4: 'Attention to Detail',
+                section_works: '<span class="comment">// </span>Works',
+                work1_title: '<span class="hashtag">#</span> Work One',
+                work1_desc: 'Describe your first creative work here — the concept, medium, and the story behind it.',
+                work2_title: '<span class="hashtag">#</span> Work Two',
+                work2_desc: 'Describe your second creative work here — the visual style, techniques used, and what inspired you.',
+                work3_title: '<span class="hashtag">#</span> Work Three',
+                work3_desc: 'Describe your third creative work here — the challenges you faced and your artistic approach.',
+                view_work: 'view_work',
+                back_btn: 'cd ..',
+                detail_about_header: '# About this work',
+                filter_label: '$ filter --type',
+                filter_all: 'all()',
+                filter_graphic: 'graphic_design()',
+                filter_illustration: 'illustration()',
+                filter_games: 'games()',
+                filter_animation: 'animation_video()',
+                filter_multimedia: 'multi_media()',
+                no_results: '// No works found in this category.',
+                section_contact: '<span class="comment">// </span>Contact',
+                contact_greeting: '# Let\'s create something together!',
+                footer_credit: '<span class="comment">//</span> Crafted with <span class="heart">&hearts;</span> by Chiu Tsz Ying &copy; 2026',
+                footer_thanks: 'print(<span class="string">"Thanks for visiting my creative space!"</span>)'
+            },
+            zh: {
+                lang_label: '中',
+                skip_hint: '按任意鍵或點擊跳過',
+                nav_home: '首頁()',
+                nav_about: '關於()',
+                nav_skills: '技能()',
+                nav_works: '作品()',
+                nav_contact: '聯絡()',
+                hero_comment: '# 歡迎來到我的創意世界',
+                hero_title: '<span class="variable">artist</span> <span class="operator">=</span> <span class="string">"趙芷瑩"</span>',
+                hero_subtitle: '<span class="function-name">print</span><span class="punctuation">(</span><span class="string">"多媒體藝術家 &amp; 創意視覺師"</span><span class="punctuation">)</span>',
+                hero_cta: '探索()',
+                section_about: '<span class="comment">// </span>關於我',
+                about_greeting: '# 你好！我是趙芷瑩',
+                about_name: '<span class="param">self</span>.<span class="property">name</span> = <span class="string">"趙芷瑩"</span>',
+                about_role: '<span class="param">self</span>.<span class="property">role</span> = <span class="string">"多媒體藝術家"</span>',
+                about_passion: '<span class="param">self</span>.<span class="property">passion</span> = [<span class="string">"視覺藝術"</span>, <span class="string">"影片製作"</span>, <span class="string">"創意設計"</span>]',
+                about_motto: '<span class="param">self</span>.<span class="property">motto</span> = <span class="string">"將想像化為視覺現實。"</span>',
+                section_skills: '<span class="comment">// </span>技能',
+                skills_creative_title: '# 創意軟件',
+                skills_media_title: '# 媒體與設計工具',
+                skills_soft_title: '# 軟實力',
+                soft_1: '創意思維',
+                soft_2: '視覺敍事',
+                soft_3: '團隊合作',
+                soft_4: '注重細節',
+                section_works: '<span class="comment">// </span>作品',
+                work1_title: '<span class="hashtag">#</span> 作品一',
+                work1_desc: '在此描述你的第一個創意作品 — 概念、媒介，以及背後的故事。',
+                work2_title: '<span class="hashtag">#</span> 作品二',
+                work2_desc: '在此描述你的第二個創意作品 — 視覺風格、使用的技術，以及靈感來源。',
+                work3_title: '<span class="hashtag">#</span> 作品三',
+                work3_desc: '在此描述你的第三個創意作品 — 你面對的挑戰及藝術創作方法。',
+                view_work: '查看作品',
+                back_btn: '返回 ..',
+                detail_about_header: '# 關於此作品',
+                filter_label: '$ 篩選 --類別',
+                filter_all: '全部()',
+                filter_graphic: '平面設計()',
+                filter_illustration: '插畫()',
+                filter_games: '遊戲()',
+                filter_animation: '動畫與影片()',
+                filter_multimedia: '多媒體()',
+                no_results: '// 此類別尚無作品。',
+                section_contact: '<span class="comment">// </span>聯絡',
+                contact_greeting: '# 一起創作吧！',
+                footer_credit: '<span class="comment">//</span> 由趙芷瑩用 <span class="heart">&hearts;</span> 精心打造 &copy; 2026',
+                footer_thanks: 'print(<span class="string">"感謝你來到我的創意空間！"</span>)'
+            }
+        };
+
+        let currentLang = 'en';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            const dict = translations[lang];
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key] !== undefined) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.getAttribute('data-i18n-html');
+                if (dict[key] !== undefined) {
+                    el.innerHTML = dict[key];
+                }
+            });
+
+            document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
+        }
+
+        /* ---- Language Toggle ---- */
+        const langToggle = document.getElementById('lang-toggle');
+        langToggle.addEventListener('click', () => {
+            const newLang = currentLang === 'en' ? 'zh' : 'en';
+            langToggle.classList.toggle('zh-active', newLang === 'zh');
+            switchLanguage(newLang);
+        });
+
+        /* ---- Typewriter Animation ---- */
+        const textToType = 'print("Hello Recruiter!")';
+        const typewriterEl = document.getElementById('typewriter-text');
+        const outputLine = document.getElementById('output-line');
+        const introScreen = document.getElementById('intro-screen');
+        const mainContent = document.getElementById('main-content');
+        let charIndex = 0;
+        let skipped = false;
+
+        function colorize(text) {
+            const funcPart = text.match(/^(print)(\()("Hello Recruiter!")(\))$/);
+            if (funcPart) {
+                return `<span class="function-name">${funcPart[1]}</span><span class="punctuation">${funcPart[2]}</span><span class="string">${funcPart[3]}</span><span class="punctuation">${funcPart[4]}</span>`;
+            }
+            return text;
+        }
+
+        function typeChar() {
+            if (skipped) return;
+            if (charIndex < textToType.length) {
+                charIndex++;
+                const partial = textToType.substring(0, charIndex);
+                typewriterEl.innerHTML = colorize(partial);
+                setTimeout(typeChar, 80 + Math.random() * 60);
+            } else {
+                setTimeout(showOutput, 400);
+            }
+        }
+
+        function showOutput() {
+            if (skipped) return;
+            outputLine.classList.remove('hidden');
+            const outputText = outputLine.querySelector('.output-text');
+            const msg = 'Hello Recruiter!';
+            let i = 0;
+            function printOutput() {
+                if (i < msg.length) {
+                    outputText.textContent += msg[i];
+                    i++;
+                    setTimeout(printOutput, 30);
+                } else {
+                    setTimeout(enterSite, 1000);
+                }
+            }
+            printOutput();
+        }
+
+        function enterSite() {
+            introScreen.classList.add('fade-out');
+            setTimeout(() => {
+                introScreen.style.display = 'none';
+                mainContent.classList.remove('hidden');
+                mainContent.classList.add('fade-in');
+                animateSkillBars();
+            }, 800);
+        }
+
+        function skipIntro() {
+            if (skipped) return;
+            skipped = true;
+            typewriterEl.innerHTML = colorize(textToType);
+            outputLine.classList.remove('hidden');
+            outputLine.querySelector('.output-text').textContent = 'Hello Recruiter!';
+            setTimeout(enterSite, 300);
+        }
+
+        introScreen.addEventListener('click', skipIntro);
+        document.addEventListener('keydown', skipIntro, { once: true });
+
+        setTimeout(typeChar, 800);
+
+        /* ---- Skill Bar Animation ---- */
+        function animateSkillBars() {
+            const fills = document.querySelectorAll('.skill-fill');
+            fills.forEach((fill, i) => {
+                const level = fill.getAttribute('data-level');
+                setTimeout(() => {
+                    fill.style.width = level + '%';
+                }, 200 * i);
+            });
+        }
+
+        /* ---- Scroll Reveal for Windows ---- */
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        function initObservers() {
+            document.querySelectorAll('.window-box, .section-title').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        const mutationObs = new MutationObserver(() => {
+            if (!mainContent.classList.contains('hidden')) {
+                initObservers();
+                mutationObs.disconnect();
+            }
+        });
+        mutationObs.observe(mainContent, { attributes: true, attributeFilter: ['class'] });
+
+        /* ---- Navbar Scroll Effect ---- */
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        /* ---- Mobile Hamburger ---- */
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        /* ---- Smooth Scroll ---- */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        /* ---- Work Detail Data ---- */
+        const worksData = {
+            '1': {
+                en: {
+                    title: 'Work One',
+                    className: 'WorkOne',
+                    type: '"Video / Motion Graphics"',
+                    tools: '["After Effects", "Premiere Pro"]',
+                    year: '"2025"',
+                    description: 'Describe your first creative work in detail here. Talk about the concept, the creative process, what inspired you, and the final outcome. You can mention any awards, exhibitions, or feedback received.',
+                    tags: ['Video', 'Motion Graphics', 'After Effects']
+                },
+                zh: {
+                    title: '作品一',
+                    className: 'WorkOne',
+                    type: '"影片 / 動態圖像"',
+                    tools: '["After Effects", "Premiere Pro"]',
+                    year: '"2025"',
+                    description: '在此詳細描述你的第一個創意作品。談談概念、創作過程、靈感來源以及最終成果。你可以提及任何獎項、展覽或收到的回饋。',
+                    tags: ['影片', '動態圖像', 'After Effects']
+                },
+                media: { type: 'video', src: 'image/work1_preview.mp4' },
+                filename: 'work_01.md'
+            },
+            '2': {
+                en: {
+                    title: 'Work Two',
+                    className: 'WorkTwo',
+                    type: '"Photography / Digital Art"',
+                    tools: '["Photoshop", "Lightroom"]',
+                    year: '"2025"',
+                    description: 'Describe your second creative work in detail here. Explain the visual style, the techniques you used, and what message or emotion you wanted to convey through this piece.',
+                    tags: ['Photography', 'Photoshop', 'Lightroom']
+                },
+                zh: {
+                    title: '作品二',
+                    className: 'WorkTwo',
+                    type: '"攝影 / 數位藝術"',
+                    tools: '["Photoshop", "Lightroom"]',
+                    year: '"2025"',
+                    description: '在此詳細描述你的第二個創意作品。解釋視覺風格、使用的技術，以及你想透過這件作品傳達的訊息或情感。',
+                    tags: ['攝影', 'Photoshop', 'Lightroom']
+                },
+                media: { type: 'image', src: 'image/work2_preview.jpg' },
+                filename: 'work_02.md'
+            },
+            '3': {
+                en: {
+                    title: 'Work Three',
+                    className: 'WorkThree',
+                    type: '"Graphic Design / Branding"',
+                    tools: '["Illustrator", "Figma"]',
+                    year: '"2025"',
+                    description: 'Describe your third creative work in detail here. Highlight the challenges you faced, your artistic approach, and how the final result met or exceeded your creative vision.',
+                    tags: ['Graphic Design', 'Illustrator', 'Branding']
+                },
+                zh: {
+                    title: '作品三',
+                    className: 'WorkThree',
+                    type: '"平面設計 / 品牌設計"',
+                    tools: '["Illustrator", "Figma"]',
+                    year: '"2025"',
+                    description: '在此詳細描述你的第三個創意作品。強調你面對的挑戰、藝術創作方法，以及最終成果如何達到或超越你的創意願景。',
+                    tags: ['平面設計', 'Illustrator', '品牌設計']
+                },
+                media: { type: 'image', src: 'image/work3_preview.jpg' },
+                filename: 'work_03.md'
+            }
+        };
+
+        /* ---- Work Detail Functions ---- */
+        const workDetail = document.getElementById('work-detail');
+        const backBtn = document.getElementById('back-btn');
+
+        function openWorkDetail(workId) {
+            const work = worksData[workId];
+            if (!work) return;
+
+            const lang = currentLang;
+            const data = work[lang];
+            const mediaBody = document.getElementById('detail-media-body');
+
+            document.getElementById('detail-filename').textContent = work.filename;
+            document.getElementById('detail-title').textContent = data.title;
+            document.getElementById('detail-class').textContent = data.className;
+            document.getElementById('detail-type').textContent = data.type;
+            document.getElementById('detail-tools').textContent = data.tools;
+            document.getElementById('detail-year').textContent = data.year;
+            document.getElementById('detail-description').textContent = data.description;
+
+            if (work.media.type === 'video') {
+                document.getElementById('detail-media-title').textContent = 'preview.mp4';
+                mediaBody.innerHTML = `<video controls autoplay muted loop playsinline><source src="${work.media.src}" type="video/mp4"></video>`;
+            } else {
+                document.getElementById('detail-media-title').textContent = 'preview.jpg';
+                mediaBody.innerHTML = `<img src="${work.media.src}" alt="${data.title}">`;
+            }
+
+            const tagsContainer = document.getElementById('detail-tags');
+            tagsContainer.innerHTML = data.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+            document.getElementById('detail-info-title').textContent = work.filename.replace('.md', '.py');
+
+            workDetail.classList.remove('hidden', 'closing');
+            document.body.style.overflow = 'hidden';
+            workDetail.scrollTop = 0;
+        }
+
+        function closeWorkDetail() {
+            workDetail.classList.add('closing');
+            setTimeout(() => {
+                workDetail.classList.add('hidden');
+                workDetail.classList.remove('closing');
+                document.body.style.overflow = '';
+            }, 400);
+        }
+
+        document.querySelectorAll('.view-work-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openWorkDetail(btn.getAttribute('data-work'));
+            });
+        });
+
+        document.querySelectorAll('.preview-box').forEach(box => {
+            const card = box.closest('.project-window');
+            if (card) {
+                box.addEventListener('click', () => {
+                    openWorkDetail(card.getAttribute('data-work'));
+                });
+            }
+        });
+
+        backBtn.addEventListener('click', closeWorkDetail);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !workDetail.classList.contains('hidden')) {
+                closeWorkDetail();
+            }
+        });
+
+        /* ---- Filter Works ---- */
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const worksGrid = document.getElementById('works-grid');
+        const projectCards = document.querySelectorAll('.project-window');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                const existing = worksGrid.querySelector('.no-results');
+                if (existing) existing.remove();
+
+                let visibleCount = 0;
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('filter-hidden');
+                        card.classList.add('filter-visible');
+                        visibleCount++;
+                    } else {
+                        card.classList.remove('filter-visible');
+                        card.classList.add('filter-hidden');
+                    }
+                });
+
+                if (visibleCount === 0) {
+                    const msg = document.createElement('div');
+                    msg.className = 'no-results';
+                    msg.setAttribute('data-i18n', 'no_results');
+                    msg.textContent = translations[currentLang].no_results;
+                    worksGrid.appendChild(msg);
+                }
+            });
+        });
+
+        /* ---- Preview Video Hover Play ---- */
+        document.querySelectorAll('.preview-box video').forEach(video => {
+            const box = video.closest('.preview-box');
+            box.addEventListener('mouseenter', () => { video.play(); });
+            box.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
+        });
+    </script>
+</body>
+</html>
