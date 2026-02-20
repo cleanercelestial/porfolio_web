@@ -908,6 +908,12 @@ a:hover {
     align-items: start;
 }
 
+.work-detail-media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .detail-media-window,
 .detail-info-window {
     opacity: 1;
@@ -926,6 +932,11 @@ a:hover {
     max-height: 70vh;
     object-fit: contain;
     background: #000;
+}
+
+.work-detail-media-container:has(.detail-media-window:nth-child(2)) .detail-media-body video,
+.work-detail-media-container:has(.detail-media-window:nth-child(2)) .detail-media-body img {
+    max-height: 45vh;
 }
 
 .detail-media-body video {
