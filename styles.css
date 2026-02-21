@@ -282,6 +282,8 @@ a:hover {
     font-weight: 700;
     color: var(--accent-green);
     letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -733,6 +735,12 @@ a:hover {
     object-fit: cover;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
+    border: none;
+}
+
+iframe.preview-media {
+    pointer-events: none;
+    min-height: 250px;
 }
 
 .preview-box:hover .preview-media {
@@ -926,16 +934,24 @@ a:hover {
 }
 
 .detail-media-body video,
-.detail-media-body img {
+.detail-media-body img,
+.detail-media-body iframe {
     width: 100%;
     display: block;
     max-height: 70vh;
     object-fit: contain;
     background: #000;
+    border: none;
+}
+
+.detail-media-body iframe {
+    aspect-ratio: 16 / 9;
+    min-height: 400px;
 }
 
 .work-detail-media-container:has(.detail-media-window:nth-child(2)) .detail-media-body video,
-.work-detail-media-container:has(.detail-media-window:nth-child(2)) .detail-media-body img {
+.work-detail-media-container:has(.detail-media-window:nth-child(2)) .detail-media-body img,
+.work-detail-media-container:has(.detail-media-window:nth-child(2)) .detail-media-body iframe {
     max-height: 45vh;
 }
 
@@ -1006,6 +1022,15 @@ a:hover {
 
 .contact-icon {
     font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: inherit;
 }
 
 .contact-label {

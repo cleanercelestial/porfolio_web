@@ -41,9 +41,9 @@
 
         <!-- NAV BAR -->
         <nav class="navbar">
-            <div class="nav-logo">
-                <span class="bracket">&lt;</span>CY<span class="bracket"> /&gt;</span>
-            </div>
+            <a href="#about" class="nav-logo">
+                <span class="logo-hash">#</span>CTY
+            </a>
             <ul class="nav-links">
                 <li><a href="#hero" class="nav-link active" data-i18n="nav_home">home()</a></li>
                 <li><a href="#about" class="nav-link" data-i18n="nav_about">about()</a></li>
@@ -117,7 +117,7 @@
                                 <span class="param">self</span>.<span class="property">name</span> = <span class="string">"Chiu Tsz Ying"</span>
                             </p>
                             <p class="code-block indent-2" data-i18n-html="about_role">
-                                <span class="param">self</span>.<span class="property">role</span> = <span class="string">"Digital creator & currently a first year student at Hong Kong Baptist University, specializing in art technology.  "</span>
+                                <span class="param">self</span>.<span class="property">role</span> = <span class="string">"Digital creator & currently a first year student at Hong Kong Baptist University, specializing in art technology."</span>
                             </p>
                             <p class="code-block indent-2" data-i18n-html="about_passion">
                                 <span class="param">self</span>.<span class="property">passion</span> = [<span class="string">"Graphic Design"</span>, <span class="string">"Video Production"</span>, <span class="string">"Illustration"</span>]
@@ -236,7 +236,6 @@
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all" data-i18n="filter_all">all()</button>
                     <button class="filter-btn" data-filter="graphic-design" data-i18n="filter_graphic">graphic_design()</button>
-                    <button class="filter-btn" data-filter="illustration" data-i18n="filter_illustration">illustration()</button>
                     <button class="filter-btn" data-filter="games" data-i18n="filter_games">games()</button>
                     <button class="filter-btn" data-filter="animation-video" data-i18n="filter_animation">animation_video()</button>
                     <button class="filter-btn" data-filter="multi-media" data-i18n="filter_multimedia">multi_media()</button>
@@ -244,6 +243,7 @@
             </div>
 
             <div class="windows-grid" id="works-grid">
+                <!-- Work 1: Self-Introduction -->
                 <div class="window-box project-window" data-work="1" data-category="animation-video">
                     <div class="window-header">
                         <div class="window-dots">
@@ -268,44 +268,15 @@
                         <p class="project-desc" data-i18n="work1_desc">Tap here to know more about me!</p>
                         <div class="project-tags">
                             <span class="tag">Video</span>
-                            <span class="tag">Charater Animation</span>
+                            <span class="tag">Character Animation</span>
                             <span class="tag">After Effects</span>
                         </div>
                         <a href="#" class="project-link view-work-btn" data-work="1"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
                     </div>
                 </div>
 
-                <div class="window-box project-window" data-work="2" data-category="games">
-                    <div class="window-header">
-                        <div class="window-dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <span class="window-title">Cleaner Sims.pyde</span>
-                        <div class="window-controls">
-                            <span class="win-btn">&#9472;</span>
-                            <span class="win-btn">&#9723;</span>
-                            <span class="win-btn">&#10005;</span>
-                        </div>
-                    </div>
-                    <div class="window-body">
-                        <div class="preview-box">
-                            <img class="preview-media" src="image/CleanerLogo.jpg" alt="Work Two Preview">
-                        </div>
-                        <h3 class="project-name" data-i18n-html="work2_title"><span class="hashtag">#</span> Cleaner Sims</h3>
-                        <p class="project-desc" data-i18n="work2_desc">A python mini-game made in Processing 3.</p>
-                        <div class="project-tags">
-                            <span class="tag">Processing 3</span>
-                            <span class="tag">Adobe Illustrator</span>
-                            <span class="tag">Illustration</span>
-                            <span class="tag">Mini-game</span>
-                        </div>
-                        <a href="#" class="project-link view-work-btn" data-work="2"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="window-box project-window" data-work="3" data-category="animation-video">
+                <!-- Work 2: Plasticro -->
+                <div class="window-box project-window" data-work="2" data-category="animation-video">
                     <div class="window-header">
                         <div class="window-dots">
                             <span class="dot red"></span>
@@ -322,19 +293,51 @@
                     <div class="window-body">
                         <div class="preview-box">
                             <video class="preview-media" autoplay muted loop playsinline>
-                                <source src="image/Plasticro.mp4" type="video/mp4">
+                                <source src="image/塑司廊 - Trim.mp4" type="video/mp4">
                             </video>
                         </div>
-                        <h3 class="project-name" data-i18n-html="work3_title"><span class="hashtag">#</span> [Plasticro] Educational Promotion Video</h3>
-                        <p class="project-desc" data-i18n="work3_desc">Plastico is an educational project focus in sustainable development goal 14 (Life Below Water).</p>
+                        <h3 class="project-name" data-i18n-html="work2_title"><span class="hashtag">#</span> [Plasticro] Educational Promotion Video</h3>
+                        <p class="project-desc" data-i18n="work2_desc">An interdisciplinary educational resource project focusing on SDG 14 (Life Below Water).</p>
                         <div class="project-tags">
-                            <span class="tag">Video edit</span>
-                            <span class="tag">After Effect</span>
+                            <span class="tag">Video Editing</span>
+                            <span class="tag">After Effects</span>
+                        </div>
+                        <a href="#" class="project-link view-work-btn" data-work="2"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Work 3: Cleaner Sims -->
+                <div class="window-box project-window" data-work="3" data-category="games">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">CleanerSims.pyde</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="preview-box">
+                            <img class="preview-media" src="image/CleanerLogo.jpg" alt="Cleaner Sims Preview">
+                        </div>
+                        <h3 class="project-name" data-i18n-html="work3_title"><span class="hashtag">#</span> Cleaner Sims</h3>
+                        <p class="project-desc" data-i18n="work3_desc">A python mini-game made in Processing 3.</p>
+                        <div class="project-tags">
+                            <span class="tag">Processing 3</span>
+                            <span class="tag">Adobe Illustrator</span>
+                            <span class="tag">Illustration</span>
+                            <span class="tag">Mini-game</span>
                         </div>
                         <a href="#" class="project-link view-work-btn" data-work="3"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
                     </div>
                 </div>
-           
+
+                <!-- Work 4: Planet B -->
                 <div class="window-box project-window" data-work="4" data-category="games">
                     <div class="window-header">
                         <div class="window-dots">
@@ -351,19 +354,114 @@
                     </div>
                     <div class="window-body">
                         <div class="preview-box">
-                            <img class="preview-media" src="image/PlanetB.jpg" alt="Work Two Preview">
+                            <video class="preview-media" autoplay muted loop playsinline>
+                                <source src="image/[Planet B] Game trailer.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <h3 class="project-name" data-i18n-html="work4_title"><span class="hashtag">#</span> Planet B</h3>
-                        <p class="project-desc" data-i18n="work2_desc">A python arcade game features a dystopia universe.</p>
+                        <p class="project-desc" data-i18n="work4_desc">A dystopian arcade game powered by Python and Raspberry Pi 3.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">After Effect</span>
+                            <span class="tag">After Effects</span>
                             <span class="tag">Raspberry Pi 3</span>
                             <span class="tag">Mini-game</span>
                         </div>
                         <a href="#" class="project-link view-work-btn" data-work="4"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
-                    </div>                      
+                    </div>
                 </div>
+
+                <!-- Work 5: Cyber Club -->
+                <div class="window-box project-window" data-work="5" data-category="graphic-design">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">CyberClub.pdf</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="preview-box">
+                            <img class="preview-media" src="image/CyberClubPosterLogo.png" alt="Cyber Club Preview">
+                        </div>
+                        <h3 class="project-name" data-i18n-html="work5_title"><span class="hashtag">#</span> [Cyber Club] Community Poster</h3>
+                        <p class="project-desc" data-i18n="work5_desc">Cyber Club is a Discord community that gathers gamers and TRPG lovers!</p>
+                        <div class="project-tags">
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Illustration</span>
+                        </div>
+                        <a href="#" class="project-link view-work-btn" data-work="5"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Work 6: A Story of Traveling Onboard -->
+                <div class="window-box project-window" data-work="6" data-category="multi-media">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">TravelingOnboard.mp4</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="preview-box">
+                            <video class="preview-media" autoplay muted loop playsinline>
+                                <source src="image/a story of traveling onboard (2024).mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3 class="project-name" data-i18n-html="work6_title"><span class="hashtag">#</span> A Story of Traveling Onboard</h3>
+                        <p class="project-desc" data-i18n="work6_desc">An AR animation for a school wall painting — a gift for my teacher.</p>
+                        <div class="project-tags">
+                            <span class="tag">After Effects</span>
+                            <span class="tag">AR</span>
+                            <span class="tag">Wall Painting</span>
+                        </div>
+                        <a href="#" class="project-link view-work-btn" data-work="6"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Work 7: Social Distance -->
+                <div class="window-box project-window" data-work="7" data-category="animation-video">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">SocialDistance.mp4</span>
+                        <div class="window-controls">
+                            <span class="win-btn">&#9472;</span>
+                            <span class="win-btn">&#9723;</span>
+                            <span class="win-btn">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="preview-box">
+                            <video class="preview-media" autoplay muted loop playsinline>
+                                <source src="image/Social Distance (2024), 3D animation by Chiu Tsz Ying.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3 class="project-name" data-i18n-html="work7_title"><span class="hashtag">#</span> Social Distance</h3>
+                        <p class="project-desc" data-i18n="work7_desc">A 3D animation about social anxiety for Visual Arts SBA.</p>
+                        <div class="project-tags">
+                            <span class="tag">3D Animation</span>
+                            <span class="tag">Blender</span>
+                        </div>
+                        <a href="#" class="project-link view-work-btn" data-work="7"><span class="prompt">$</span> <span data-i18n="view_work">view_work</span> &rarr;</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACT SECTION -->
@@ -390,21 +488,21 @@
                             <span class="contact-icon">&#9993;</span>
                             <div>
                                 <p class="contact-label">email</p>
-                                <a href="mailto:your@email.com" class="contact-value">sandy764764@gmail.com</a>
+                                <a href="mailto:sandy764764@gmail.com" class="contact-value">sandy764764@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">&#128279;</span>
+                            <span class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
                             <div>
-                                <p class="contact-label">Whatsapps</p>
-                                <a href="#" class="contact-value">+852 53394477</a>
+                                <p class="contact-label">WhatsApp</p>
+                                <a href="https://wa.me/85253394477" class="contact-value">+852 53394477</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">&#127912;</span>
+                            <span class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span>
                             <div>
-                                <p class="contact-label">instagram</p>
-                                <a href="#" class="contact-value">instagram.com/Dawed.awe</a>
+                                <p class="contact-label">Instagram</p>
+                                <a href="https://instagram.com/Dawed.awe" class="contact-value">@Dawed.awe</a>
                             </div>
                         </div>
                     </div>
@@ -430,11 +528,6 @@
                                 <span class="dot green"></span>
                             </div>
                             <span class="window-title" id="detail-media-title">preview.mp4</span>
-                            <div class="window-controls">
-                                <span class="win-btn">&#9472;</span>
-                                <span class="win-btn">&#9723;</span>
-                                <span class="win-btn">&#10005;</span>
-                            </div>
                         </div>
                         <div class="window-body detail-media-body" id="detail-media-body">
                         </div>
@@ -449,11 +542,6 @@
                                 <span class="dot green"></span>
                             </div>
                             <span class="window-title" id="detail-info-title">details.py</span>
-                            <div class="window-controls">
-                                <span class="win-btn">&#9472;</span>
-                                <span class="win-btn">&#9723;</span>
-                                <span class="win-btn">&#10005;</span>
-                            </div>
                         </div>
                         <div class="window-body">
                             <h2 class="detail-title" id="detail-title"></h2>
@@ -528,19 +616,26 @@
                 soft_3: 'Project & Time Management',
                 soft_4: 'Feedback-welcome',
                 section_works: '<span class="comment">// </span>Works',
-                work1_title: '<span class="hashtag">#</span> Work One',
-                work1_desc: 'Describe your first creative work here — the concept, medium, and the story behind it.',
-                work2_title: '<span class="hashtag">#</span> Work Two',
-                work2_desc: 'Describe your second creative work here — the visual style, techniques used, and what inspired you.',
-                work3_title: '<span class="hashtag">#</span> Work Three',
-                work3_desc: 'Describe your third creative work here — the challenges you faced and your artistic approach.',
+                work1_title: '<span class="hashtag">#</span> Self-Introduction',
+                work1_desc: 'Tap here to know more about me!',
+                work2_title: '<span class="hashtag">#</span> [Plasticro] Educational Promotion Video',
+                work2_desc: 'An interdisciplinary educational resource project focusing on SDG 14 (Life Below Water).',
+                work3_title: '<span class="hashtag">#</span> Cleaner Sims',
+                work3_desc: 'A python mini-game made in Processing 3.',
+                work4_title: '<span class="hashtag">#</span> Planet B',
+                work4_desc: 'A dystopian arcade game powered by Python and Raspberry Pi 3.',
+                work5_title: '<span class="hashtag">#</span> [Cyber Club] Community Poster',
+                work5_desc: 'Cyber Club is a Discord community that gathers gamers and TRPG lovers!',
+                work6_title: '<span class="hashtag">#</span> A Story of Traveling Onboard',
+                work6_desc: 'An AR animation for a school wall painting — a gift for my teacher.',
+                work7_title: '<span class="hashtag">#</span> Social Distance',
+                work7_desc: 'A 3D animation about social anxiety for Visual Arts SBA.',
                 view_work: 'view_work',
                 back_btn: 'cd ..',
                 detail_about_header: '# About this work',
                 filter_label: '$ filter --type',
                 filter_all: 'all()',
                 filter_graphic: 'graphic_design()',
-                filter_illustration: 'illustration()',
                 filter_games: 'games()',
                 filter_animation: 'animation_video()',
                 filter_multimedia: 'multi_media()',
@@ -582,19 +677,26 @@
                 soft_3: '項目與時間管理',
                 soft_4: '樂於接受反饋',
                 section_works: '<span class="comment">// </span>作品',
-                work1_title: '<span class="hashtag">#</span> 作品一',
-                work1_desc: '在此描述你的第一個創意作品 — 概念、媒介，以及背後的故事。',
-                work2_title: '<span class="hashtag">#</span> 作品二',
-                work2_desc: '在此描述你的第二個創意作品 — 視覺風格、使用的技術，以及靈感來源。',
-                work3_title: '<span class="hashtag">#</span> 作品三',
-                work3_desc: '在此描述你的第三個創意作品 — 你面對的挑戰及藝術創作方法。',
+                work1_title: '<span class="hashtag">#</span> 自我介紹',
+                work1_desc: '點擊了解更多關於我的資訊！',
+                work2_title: '<span class="hashtag">#</span> [Plasticro] 教育推廣影片',
+                work2_desc: '聚焦於可持續發展目標14（水下生物）的跨學科教育資源項目。',
+                work3_title: '<span class="hashtag">#</span> 清潔模擬器',
+                work3_desc: '使用 Processing 3 製作的 Python 迷你遊戲。',
+                work4_title: '<span class="hashtag">#</span> Planet B',
+                work4_desc: '以「反烏托邦」為主題的街機遊戲，以Python及Raspberry Pi 3驅動。',
+                work5_title: '<span class="hashtag">#</span> [Cyber Club] 社群海報',
+                work5_desc: 'Cyber Club 是聚集遊戲玩家和 TRPG 愛好者的 Discord 社群！',
+                work6_title: '<span class="hashtag">#</span> 旅途中的故事',
+                work6_desc: '為即將拆卸的學校壁畫製作的AR平面動畫，送給老師的禮物。',
+                work7_title: '<span class="hashtag">#</span> Social Distance',
+                work7_desc: '高中美術科校本評核的3D動畫，以「社交焦慮」為主題。',
                 view_work: '查看作品',
                 back_btn: '返回 ..',
                 detail_about_header: '# 關於此作品',
                 filter_label: '$ 篩選 --類別',
                 filter_all: '全部()',
                 filter_graphic: '平面設計()',
-                filter_illustration: '插畫()',
                 filter_games: '遊戲()',
                 filter_animation: '動畫與影片()',
                 filter_multimedia: '多媒體()',
@@ -788,71 +890,163 @@
             '1': {
                 en: {
                     title: 'Self-Introduction',
-                    className: 'Self-Introduction',
+                    className: 'SelfIntroduction',
                     type: '"Video / Character Animation"',
                     tools: '["After Effects", "Adobe Illustrator"]',
                     year: '"2026"',
-                    description: 'A self-introduction video made for academic purpose, introducing my art journey as a digital artist. Also pinned in the hero section of my website! ',
+                    description: 'A self-introduction video made for academic purpose, introducing my art journey as a digital artist. Also pinned in the hero section of my website!',
                     tags: ['Video', 'Character Animation', 'After Effects']
                 },
                 zh: {
-                    title: '作品一',
-                    className: 'WorkOne',
-                    type: '"影片 / 動態圖像"',
-                    tools: '["After Effects", "Premiere Pro"]',
-                    year: '"2025"',
-                    description: '在此詳細描述你的第一個創意作品。談談概念、創作過程、靈感來源以及最終成果。你可以提及任何獎項、展覽或收到的回饋。',
-                    tags: ['影片', '動態圖像', 'After Effects']
+                    title: '自我介紹',
+                    className: 'SelfIntroduction',
+                    type: '"影片 / 角色動畫"',
+                    tools: '["After Effects", "Adobe Illustrator"]',
+                    year: '"2026"',
+                    description: '為學術目的製作的自我介紹影片，介紹我作為數碼藝術家的藝術旅程。同時置頂在我網站的首頁！',
+                    tags: ['影片', '角色動畫', 'After Effects']
                 },
                 media: { type: 'video', src: 'image/Chiu_tsz_ying_25237594.mp4' },
                 filename: 'Self-Introduction.md'
             },
             '2': {
                 en: {
-                    title: 'Cleaner Sims',
-                    className: 'WorkTwo',
-                    type: '"Python / Mini-games"',
-                    tools: '["Processing 3", "Adobe Illustrator", "Procreate"]',
-                    year: '"2026"',
-                    description: 'An academic mini-game project made in Processing 3 Python mode. Cleaner Sims is a cleaner simulation game, allow user to remove targeted objects in a limited time by drag and drop.',
-                    tags: ['Processing 3', 'Adobe Illustrator', 'Illustration', 'Mini-game']
+                    title: '[Plasticro] Educational Promotion Video',
+                    className: 'Plasticro',
+                    type: '"Video / Educational"',
+                    tools: '["After Effects", "Premiere Pro"]',
+                    year: '"2025"',
+                    description: 'Plasticro is an educational resource project focusing on sustainable development goal 14 (Life Below Water). This video documented the process how we change plastic waste into educational resource, aiming to increase awareness of micro-plastic issue among primary and secondary students.',
+                    tags: ['Video Editing', 'After Effects', 'Educational']
                 },
                 zh: {
-                    title: '作品二',
-                    className: 'WorkTwo',
-                    type: '"攝影 / 數位藝術"',
-                    tools: '["Photoshop", "Lightroom"]',
+                    title: '[Plasticro] 教育推廣影片',
+                    className: 'Plasticro',
+                    type: '"影片 / 教育"',
+                    tools: '["After Effects", "Premiere Pro"]',
                     year: '"2025"',
-                    description: '在此詳細描述你的第二個創意作品。解釋視覺風格、使用的技術，以及你想透過這件作品傳達的訊息或情感。',
-                    tags: ['攝影', 'Photoshop', 'Lightroom']
+                    description: '「塑司廊」是一個聚焦於可持續發展目標14（水下生物）的跨學科教育資源項目。這部影片記錄了塑司廊團隊如何以廢物利用的方式為中小學生製作教育資源，並且提高學生對微塑膠污染的認知。',
+                    tags: ['影片剪輯', 'After Effects', '教育']
                 },
-                media: [
-                    { type: 'image', src: 'image/Cleaner_preview1.jpg' },
-                    { type: 'image', src: 'image/Cleaner_preview2.jpg' }
-                ],
-                filename: 'work_02.md'
+                media: { type: 'iframe', src: 'https://drive.google.com/file/d/1S2jLfDLUlDRrgFn15F9A3IgkzJuAqZlo/preview' },
+                filename: 'Plasticro.md'
             },
             '3': {
                 en: {
-                    title: 'Work Three',
-                    className: 'WorkThree',
-                    type: '"Graphic Design / Branding"',
-                    tools: '["Illustrator", "Figma"]',
-                    year: '"2025"',
-                    description: 'Describe your third creative work in detail here. Highlight the challenges you faced, your artistic approach, and how the final result met or exceeded your creative vision.',
-                    tags: ['Graphic Design', 'Illustrator', 'Branding']
+                    title: 'Cleaner Sims',
+                    className: 'CleanerSims',
+                    type: '"Python / Mini-game"',
+                    tools: '["Processing 3", "Adobe Illustrator", "Procreate"]',
+                    year: '"2026"',
+                    description: 'An academic mini-game project made in Processing 3 Python mode. Cleaner Sims is a cleaner simulation game that allows users to remove targeted objects within a limited time by drag and drop.',
+                    tags: ['Processing 3', 'Adobe Illustrator', 'Illustration', 'Mini-game']
                 },
                 zh: {
-                    title: '作品三',
-                    className: 'WorkThree',
-                    type: '"平面設計 / 品牌設計"',
-                    tools: '["Illustrator", "Figma"]',
-                    year: '"2025"',
-                    description: '在此詳細描述你的第三個創意作品。強調你面對的挑戰、藝術創作方法，以及最終成果如何達到或超越你的創意願景。',
-                    tags: ['平面設計', 'Illustrator', '品牌設計']
+                    title: '清潔模擬器',
+                    className: 'CleanerSims',
+                    type: '"Python / 迷你遊戲"',
+                    tools: '["Processing 3", "Adobe Illustrator", "Procreate"]',
+                    year: '"2026"',
+                    description: '一個使用 Processing 3 Python 模式製作的學術迷你遊戲項目。清潔模擬器是一款讓使用者在限定時間內透過拖放移除目標物件的清潔模擬遊戲。',
+                    tags: ['Processing 3', 'Adobe Illustrator', '插畫', '迷你遊戲']
                 },
-                media: { type: 'image', src: 'image/work3_preview.jpg' },
-                filename: 'work_03.md'
+                media: [
+                    { type: 'image', src: 'image/sim1.gif' },
+                    { type: 'image', src: 'image/sim2.gif' }
+                ],
+                filename: 'CleanerSims.md'
+            },
+            '4': {
+                en: {
+                    title: 'Planet B',
+                    className: 'PlanetB',
+                    type: '"Python / Arcade Game"',
+                    tools: '["Python", "After Effects", "Raspberry Pi 3"]',
+                    year: '"2025"',
+                    description: 'Planet B is a Python arcade game featuring a dystopian universe where players act as a city engineer, making choices to save a dying planet. Powered by Python and Raspberry Pi 3.',
+                    tags: ['Python', 'After Effects', 'Raspberry Pi 3', 'Mini-game']
+                },
+                zh: {
+                    title: 'Planet B',
+                    className: 'PlanetB',
+                    type: '"Python / 街機遊戲"',
+                    tools: '["Python", "After Effects", "Raspberry Pi 3"]',
+                    year: '"2025"',
+                    description: 'Planet B是一款以「反烏托邦」為主題的街機遊戲。遊戲程式以Python及Raspberry Pi 3驅動，講述一個城市工程師如何為一個即將沒落的星球作出選擇。',
+                    tags: ['Python', 'After Effects', 'Raspberry Pi 3', '迷你遊戲']
+                },
+                media: [
+                    { type: 'video', src: 'image/[Planet B] Game trailer.mp4' },
+                    { type: 'image', src: 'image/PlanetB_board.png' },
+                    { type: 'image', src: 'image/noPlanetB.jpg' }
+                ],
+                filename: 'PlanetB.md'
+            },
+            '5': {
+                en: {
+                    title: '[Cyber Club] Community Poster',
+                    className: 'CyberClub',
+                    type: '"Graphic Design / Illustration"',
+                    tools: '["Adobe Illustrator", "Procreate"]',
+                    year: '"2025"',
+                    description: 'Cyber Club is a Discord community that gathers gamers and TRPG lovers. This poster was designed to promote the community, featuring a Sandbox game visual (Terraria).',
+                    tags: ['Graphic Design', 'Illustration']
+                },
+                zh: {
+                    title: '[Cyber Club] 社群海報',
+                    className: 'CyberClub',
+                    type: '"平面設計 / 插畫"',
+                    tools: '["Adobe Illustrator", "Procreate"]',
+                    year: '"2025"',
+                    description: 'Cyber Club 是一個聚集遊戲玩家和 TRPG 愛好者的 Discord 社群。此海報以沙盒遊戲 Terraria 的視覺風格設計，用於推廣社群。',
+                    tags: ['平面設計', '插畫']
+                },
+                media: { type: 'image', src: 'image/PHSCyberClub.png' },
+                filename: 'CyberClub.md'
+            },
+            '6': {
+                en: {
+                    title: 'A Story of Traveling Onboard',
+                    className: 'TravelingOnboard',
+                    type: '"Multi-media / AR Animation"',
+                    tools: '["After Effects", "Adobe Illustrator"]',
+                    year: '"2024"',
+                    description: 'An AR animation created for a school wall painting that was about to be demolished, and also a gift for my teacher. It uses the sea as a metaphor for life\'s difficulties, concluding with the message that things will work out in the end.',
+                    tags: ['After Effects', 'AR', 'Wall Painting']
+                },
+                zh: {
+                    title: '旅途中的故事',
+                    className: 'TravelingOnboard',
+                    type: '"多媒體 / AR 動畫"',
+                    tools: '["After Effects", "Adobe Illustrator"]',
+                    year: '"2024"',
+                    description: '一部為一面即將拆卸的學校壁畫製作的AR平面動畫，亦是一份送給老師的禮物。以大海比喻重重困難的人生，以「船頭橋頭自然直」作結。',
+                    tags: ['After Effects', 'AR', '壁畫']
+                },
+                media: { type: 'video', src: 'image/a story of traveling onboard (2024).mp4' },
+                filename: 'TravelingOnboard.md'
+            },
+            '7': {
+                en: {
+                    title: 'Social Distance',
+                    className: 'SocialDistance',
+                    type: '"3D Animation"',
+                    tools: '["Blender", "After Effects"]',
+                    year: '"2024"',
+                    description: 'A 3D animation created for the high school Visual Arts School-Based Assessment. Themed around social anxiety, it explores the impact of online social interactions on mental health.',
+                    tags: ['3D Animation', 'Blender']
+                },
+                zh: {
+                    title: 'Social Distance',
+                    className: 'SocialDistance',
+                    type: '"3D 動畫"',
+                    tools: '["Blender", "After Effects"]',
+                    year: '"2024"',
+                    description: '高中美術科校本評核的3D動畫作品。以「社交焦慮」為主題，講述網絡社交對精神健康帶來的影響。',
+                    tags: ['3D 動畫', 'Blender']
+                },
+                media: { type: 'video', src: 'image/Social Distance (2024), 3D animation by Chiu Tsz Ying.mp4' },
+                filename: 'SocialDistance.md'
             }
         };
 
@@ -880,10 +1074,15 @@
 
             mediaContainer.innerHTML = mediaItems.map((m, i) => {
                 const num = mediaItems.length > 1 ? `_${i + 1}` : '';
-                const titleText = m.type === 'video' ? `preview${num}.mp4` : `preview${num}.jpg`;
-                const content = m.type === 'video'
-                    ? `<video controls autoplay muted loop playsinline><source src="${m.src}" type="video/mp4"></video>`
-                    : `<img src="${m.src}" alt="${data.title}${num ? ' preview ' + (i + 1) : ''}">`;
+                const titleText = m.type === 'video' ? `preview${num}.mp4` : m.type === 'iframe' ? `preview${num}.mp4` : `preview${num}.jpg`;
+                let content;
+                if (m.type === 'video') {
+                    content = `<video controls autoplay muted loop playsinline><source src="${m.src}" type="video/mp4"></video>`;
+                } else if (m.type === 'iframe') {
+                    content = `<iframe src="${m.src}" allow="autoplay" allowfullscreen></iframe>`;
+                } else {
+                    content = `<img src="${m.src}" alt="${data.title}${num ? ' preview ' + (i + 1) : ''}">`;
+                }
                 return `<div class="window-box detail-media-window">
                     <div class="window-header">
                         <div class="window-dots">
@@ -892,11 +1091,6 @@
                             <span class="dot green"></span>
                         </div>
                         <span class="window-title">${titleText}</span>
-                        <div class="window-controls">
-                            <span class="win-btn">&#9472;</span>
-                            <span class="win-btn">&#9723;</span>
-                            <span class="win-btn">&#10005;</span>
-                        </div>
                     </div>
                     <div class="window-body detail-media-body">${content}</div>
                 </div>`;
